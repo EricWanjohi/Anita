@@ -1,0 +1,546 @@
+/*.jumbotron {
+
+  position: ;
+  margin: 0px;
+  color: white;
+  border-radius: 0px;
+}*/
+
+
+/*Overlay*/
+
+
+/* The Overlay (background) */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #f15a29;
+  /* Black fallback color */
+  background-color: #f15a29;
+  /* Black w/opacity */
+  overflow-y: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.humberburger {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#logo {
+  background-image: url("../images/landing.jpg");
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#happy-party {
+  height: 200px;
+}
+
+.happy {
+  color: black;
+  font-size: 18px;
+  font-family: fantasy;
+  height: 100px;
+  width: 100%;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  background-color: white;
+}
+
+.party {
+  color: white;
+  font-size: 18px;
+  font-family: fantasy;
+  height: 100px;
+  width: 100%;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  background-color: #F15A29;
+}
+
+#breakfast {
+  background-image: url("../images/breakfast.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px color: white;
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-family: fantasy;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#breakfast:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+#lunch {
+  background-image: url("../images/lunch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px color: white;
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-family: fantasy;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#lunch:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+#dinner {
+  background-image: url("../images/dinner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px color: white;
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-family: fantasy;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#dinner:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+#h3 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: fantasy;
+  color: grey;
+}
+
+#h4 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: fantasy;
+  color: grey;
+}
+
+#drinks {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#Drinks {
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 35px;
+  margin-right: 10px;
+}
+
+#drink-con {}
+
+#drink-box {
+  border: 0px;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#drink-pics {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-style: ridge;
+  border-radius: 6px;
+  margin: 0px;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+#drink1 {
+  padding-right: 0px;
+}
+
+#drink2 {
+  padding-left: 0px;
+}
+
+#woman {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+#cocktail {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#food-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#food-row {
+  background-color: white;
+}
+
+#food-pics {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
+  border-style: ridge;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+#shadow {}
+
+#foods {
+  padding-left: 10px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+#food {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#food-con {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#foodsBg {
+  background-image: url("../images/foodsBg.jpg");
+  height: 600px;
+}
+
+#click {
+  color: #F15A29;
+  font-weight: bold;
+}
+
+#customer {
+  border-style: outset;
+}
+
+#navbar {
+  margin-bottom: 0px;
+  border: 0px;
+  width: 100px;
+}
+
+#button {
+  border-color: #F15A29;
+  border-radius: 4px;
+  background-color: white;
+  color: #f15a29;
+}
+
+.col-md-3 {
+  height: 200px;
+}
+
+#customers {
+  background-color: white;
+}
+
+#dishes-drinks {
+  background-color: #cccccc;
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px;
+  border-color: #cccccc;
+}
+
+#dish {
+  text-align: center;
+  color: #f15a29;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px background-color: white;
+}
+
+#gallery {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#gallery-header {
+  color: #f15a29;
+  font-weight: bold;
+  background-color: white;
+  border: 0px;
+  text-align: center;
+}
+
+#gallery-titles {
+  height: 40px;
+  border: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #cccccc;
+}
+
+#gallery-con {
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 60%;
+}
+
+#food-gallery {}
+
+#topic-row {
+  width: 100%;
+  height: 45px;
+}
+
+#gallery-pics {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #f15a29;
+}
+
+#text {
+  color: #f15a29;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#comments {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.individual {
+  font-weight: bold;
+  color: black;
+}
+
+.happy-customers {
+  font-weight: bold;
+  color: #f15a29;
+}
+
+#comment-row {
+  border-style: ridge;
+}
+
+#subscribe {
+  background-image: url("../images/subscribe.jpg");
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.subscribe {
+  background-color: #f15a29;
+  color: white;
+  border: 0px;
+  height: 36px;
+  width: 200px;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+#notify {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.email {
+  width: 350px;
+  height: 40px;
+  background-color: grey;
+  color: white;
+  border: 0px;
+  opacity: 0.6;
+}
+
+#menu-sm {
+  background-color: #f15a29;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 11px;
+}
+
+#c-burger {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#b-burger {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#c-pizza {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#foody {
+  background: white;
+  background-color: white;
+  color: #f15a29;
+}
+
+#menu-last {
+  font-size: 40px;
+}
+
+#comments {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#boxShadow-div {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#happy-customers {
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+#happy-customers comments {
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border-right: 2px;
+  border-color: black;
+  border-width: medium;
+}
